@@ -1,0 +1,18 @@
+﻿生成启动时间为 2020/8/20 9:20:35。
+     1>项目“D:\2020C_code\test8.20\test8.20\test8.20.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
+         源.cpp
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(9): error C2296: “&”: 非法，左操作数包含“int *”类型
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(11): error C2065: “c1！”: 未声明的标识符
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(14): error C2146: 语法错误: 缺少“;”(在标识符“；”的前面)
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(14): error C2065: “；”: 未声明的标识符
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(14): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(17): error C2146: 语法错误: 缺少“;”(在标识符“；”的前面)
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(17): error C2065: “；”: 未声明的标识符
+     1>d:\2020c_code\test8.20\test8.20\源.cpp(17): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+     1>已完成生成项目“D:\2020C_code\test8.20\test8.20\test8.20.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.41
