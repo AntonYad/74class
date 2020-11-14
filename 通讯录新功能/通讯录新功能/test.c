@@ -1,4 +1,4 @@
-#include "ContactBooke.h"
+#include "ContactBook.h"
 void Test1()
 {
 	ContactBook cb;
@@ -13,14 +13,14 @@ void Test1()
 	Contact* pct = ContactSearch(&cb, name);
 	if (pct == NULL)
 	{
-		printf("无此联系人\n");
+	printf("无此联系人\n");
 	}
 	else
 	{
-		printf("姓名：%s\n", pct->name);
-		printf("年龄：%d\n", pct->age);
-		printf("电话：%s\n", pct->tel);
-		printf("地址：%s\n", pct->addr);
+	printf("姓名：%s\n", pct->name);
+	printf("年龄：%d\n", pct->age);
+	printf("电话：%s\n", pct->tel);
+	printf("地址：%s\n", pct->addr);
 	}*/
 }
 enum Option
@@ -41,7 +41,7 @@ void ContackBookMenu()
 	ContactBook cb;
 	char name[NAME_MAX];
 	ContactInit(&cb);
-	ContactBookLoad(&cb);
+	//ContactBookLoad(&cb);
 	Contact ct1 = { "A", 1, "7777777777", "科大楼" };
 	Contact ct2 = { "杭哥", 30, "888888888", "西安" };
 	ContactAdd(&cb, ct1);
@@ -68,7 +68,7 @@ void ContackBookMenu()
 			scanf("%s", &ct.tel);
 			scanf("%s", &ct.addr);
 			ContactAdd(&cb, ct);
-			     break;
+			break;
 		case SEARCH:
 			printf("请输入要查找人的名字:");
 			scanf("%s", name);
@@ -111,7 +111,7 @@ void ContackBookMenu()
 				short age;
 				printf("请输入你要更新名字及年龄：\n");
 				scanf("%s", name);
-				scanf("%d",&age);
+				scanf("%d", &age);
 				ContactUpdateAge(&cb, name, age);
 			}
 			if (input == 3)
@@ -130,14 +130,14 @@ void ContackBookMenu()
 			ContactBookPrint(&cb);
 			break;
 		case SORT:
-		    Sort_contact(&cb);
+			Sort_contact(&cb);
 			break;
-		case Save:
-			ContactBookSave(&cb);
-			break;
-		case Load:
-			ContactBookLoad(&cb);
-			break;
+		//case Save:
+		//	ContactBookSave(&cb);
+		//	break;
+		//case Load:
+		//	ContactBookLoad(&cb);
+		//	break;
 		default:
 			printf("没有此选项，请重新选择\n");
 			break;

@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 #pragma once
 #include <stdio.h>
 #include <string.h>
@@ -18,7 +19,6 @@ typedef struct ContactBook
 	Contact contactArray[CTARRAY_MAX];
 	int size;
 }ContactBook;
-void ContactInit(ContactBook* pcb);
 void ContactAdd(ContactBook* pcb, Contact ct);
 void ContactDel(ContactBook* pcb, const char* name);
 Contact* ContactSearch(ContactBook* pcb, const char* name);
@@ -27,5 +27,5 @@ void ContactUpdateAge(ContactBook* pcb, char* name, short age);
 void ContactUpdateAddr(ContactBook* pcb, char* name, char* addr);
 void ContactBookPrint(ContactBook* pcb);
 void Sort_contact(ContactBook* pcb);
-void ContactBookSave(ContactBook* pcb);
-void ContactBookLoad(ContactBook* pcb);
+//void ContactBookSave(ContactBook* pcb);
+//void ContactBookLoad(ContactBook* pcb);

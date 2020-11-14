@@ -1,4 +1,4 @@
-#include "ContactBooke.h"
+#include "ContactBook.h"
 void ContactInit(ContactBook* pcb)
 {
 	memset(pcb->contactArray, 0, sizeof(Contact)*CTARRAY_MAX);
@@ -103,30 +103,30 @@ void Sort_contact(ContactBook* pcb)
 			{
 				Contact tmp = pcb->contactArray[j];
 				pcb->contactArray[j] = pcb->contactArray[j + 1];
-				pcb->contactArray[j + 1] = tmp; 
+				pcb->contactArray[j + 1] = tmp;
 			}
 		}
 	}
 }
-void ContactBookSave(ContactBook* pcb)
-{
-	FILE* fout = fopen("contact_book.txt", "w");
-	for (int i = 0; i < pcb->size; i++)
-	{
-		fprintf(fout, "%s %d %s %s\n", pcb->contactArray->addr, pcb->contactArray->age,
-			pcb->contactArray->name, pcb->contactArray->tel);	
-	}
-	fclose(fout);
-}
-void ContactBookLoad(ContactBook* pcb)
-{
-	FILE*fin = fopen("contact_book.txt", "r");
-	Contact ct;
-	int ret = fscanf(fin, "%s %d %s %s\n", ct.addr, ct.age, ct.name, ct.tel);
-	while (ret!= EOF)
-	{
-		ContactAdd(pcb, ct);
-		ret = fscanf(fin, "%s %d %s %s\n", ct.addr, ct.age, ct.name, ct.tel);
-	}
-	fclose(fin);
-}
+//void ContactBookSave(ContactBook* pcb)
+//{
+//	FILE* fout = fopen("contact_book.txt", "w");
+//	for (int i = 0; i < pcb->size; i++)
+//	{
+//		fprintf(fout, "%s %d %s %s\n", pcb->contactArray->addr, pcb->contactArray->age,
+//			pcb->contactArray->name, pcb->contactArray->tel);
+//	}
+//	fclose(fout);
+//}
+//void ContactBookLoad(ContactBook* pcb)
+//{
+//	FILE*fin = fopen("contact_book.txt", "r");
+//	Contact ct;
+//	int ret = fscanf(fin, "%s %d %s %s\n", ct.addr, ct.age, ct.name, ct.tel);
+//	while (ret != EOF)
+//	{
+//		ContactAdd(pcb, ct);
+//		ret = fscanf(fin, "%s %d %s %s\n", ct.addr, ct.age, ct.name, ct.tel);
+//	}
+//	fclose(fin);
+//}
