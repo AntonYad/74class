@@ -1,0 +1,14 @@
+﻿生成启动时间为 2020/11/24 9:43:17。
+     1>项目“D:\2020_code\max-min\max-min\max-min.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "11-24.cpp"
+         11-24.cpp
+     1>d:\2020_code\max-min\max-min\11-24.cpp(7): warning C4101: “j”: 未引用的局部变量
+       Link:
+         D:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\2020_code\max-min\Debug\max-min.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\2020_code\max-min\Debug\max-min.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\2020_code\max-min\Debug\max-min.lib" /MACHINE:X86 "Debug\11-24.obj"
+         max-min.vcxproj -> D:\2020_code\max-min\Debug\max-min.exe
+     1>已完成生成项目“D:\2020_code\max-min\max-min\max-min.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.36
